@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: 0;
+}
+/* =============================*/
+.lock {
+    overflow: hidden;
+}
+.wrapper {
+    min-height: 100%;
+    // overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    flex: 1 1 auto;
+    // padding-top: 100px;
+    z-index: 0;
+}
+.container {
+    // width: 1470px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+/* Сховати елемент не видаляючи з DOM */
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

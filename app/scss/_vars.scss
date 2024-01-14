@@ -1,0 +1,34 @@
+$default: #1B3764;
+$hover: #4d7ecc;
+$accent: #FFCA42;
+$text-color: #B4C7E7;
+$textwhite: #F6F8FC;
+$textgray: #969AA0;
+
+%btn {
+   @extend %cardo-400;
+   background-color: $accent;
+   font-size: 19px;
+   line-height: 28px;
+   letter-spacing: 0.57px;
+   text-transform: capitalize;
+   color: $default;
+   border: none;
+   cursor: pointer;
+   transition: all .2s;
+
+   &:hover {
+      color: $accent;
+      background-color: $hover;
+   }
+}
+
+%cardo-400 {
+   font-family: 'Cardo-Regular', sans-serif;
+   font-weight: 400;
+}
+
+%inter-400 {
+   font-family: 'Inter-Regular', sans-serif;
+   font-weight: 400;
+}
