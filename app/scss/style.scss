@@ -1,24 +1,9 @@
-@import 'vars';
-@import 'fonts';
-@import 'reset';
-@import 'global';
-@import 'libs';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@import 'media';
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+@import "libs";
+.bbb {
+   @extend %btn;
+}
+@import "media";

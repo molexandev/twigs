@@ -1,38 +1,40 @@
 body {
-    height: 100vh;
+   height: 100vh;
+   font-size: 1rem;
+   @extend %roboto-400;
 }
 a {
-    text-decoration: none;
+   text-decoration: none;
 }
 button {
-    border: 0;
+   border: 0;
 }
 /* =============================*/
 .lock {
-    overflow: hidden;
+   overflow: hidden;
 }
 .wrapper {
-    min-height: 100%;
-    // overflow: clip;
-    display: flex;
-    flex-direction: column;
+   min-height: 100%;
+   // overflow: clip;
+   display: flex;
+   flex-direction: column;
 }
 .main {
-    flex: 1 1 auto;
-    // padding-top: 100px;
-    z-index: 0;
+   flex: 1 1 auto;
+   // padding-top: 100px;
+   z-index: 0;
 }
 .container {
-    // width: 1470px;
-    padding: 0 15px;
-    margin: 0 auto;
+   width: 1470px;
+   padding: 0 15px;
+   margin: 0 auto;
 }
 /* Сховати елемент не видаляючи з DOM */
 .visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
+   position: absolute;
+   left: -10000px;
+   top: auto;
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
 }
