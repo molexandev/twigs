@@ -21,11 +21,11 @@ button {
 }
 .main {
    flex: 1 1 auto;
-   // padding-top: 100px;
+   padding-top: 74px;
    z-index: 0;
 }
 .container {
-   width: 1470px;
+   max-width: 1470px;
    padding: 0 15px;
    margin: 0 auto;
 }
