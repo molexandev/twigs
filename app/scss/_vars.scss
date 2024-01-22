@@ -1,9 +1,6 @@
 $default: #212806;
 $hover: #b48d62;
 $accent: #fcf8f3;
-// $text-color: #b4c7e7;
-// $textwhite: #f6f8fc;
-// $textgray: #969aa0;
 
 %btn {
    @extend %roboto-400;
@@ -15,7 +12,7 @@ $accent: #fcf8f3;
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 18px 0;
+   gap: 0 18px;
    border-radius: 40px;
    border: 1px solid $default;
    cursor: pointer;
