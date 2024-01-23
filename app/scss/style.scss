@@ -718,5 +718,36 @@
       }
    }
 }
-
+.arrow-go-up {
+   position: relative;
+   &__svg {
+      width: 32px;
+      height: 14px;
+      transform: rotate(-90deg);
+      transition: all 0.3s;
+      stroke: $hover;
+   }
+}
+#scrollToTopBtn {
+   position: fixed;
+   display: none;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   bottom: 30px;
+   right: 30px;
+   width: 50px;
+   height: 50px;
+   border-radius: 7px;
+   background-color: $default;
+   transition: all 0.3s;
+   cursor: pointer;
+   &:hover {
+      background-color: $hover;
+      .arrow-go-up__svg {
+         stroke: $accent;
+         fill: transparent;
+      }
+   }
+}
 @import "media";
