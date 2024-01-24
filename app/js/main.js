@@ -22,6 +22,14 @@ $(function () {
       fade: true,
       draggable: true,
    });
+
+   // menu burger
+
+   $(".menu__btn, .menu a").on("click", function () {
+      $(".menu__list").toggleClass("active");
+      $(".menu__btn").toggleClass("active");
+      $("body").toggleClass("lock");
+   });
 });
 
 // Плавний скрол
@@ -49,15 +57,6 @@ function scrollToTop() {
    });
 }
 
-// Функція для прокрутки сторінки наверх
-function scrollToTop() {
-   // Прокрутити сторінку до верху з плавністю
-   window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-   });
-}
-
 // Отримати елемент кнопки
 var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -73,3 +72,13 @@ window.addEventListener("scroll", function () {
       scrollToTopBtn.style.display = "none";
    }
 });
+
+// wow animation
+wow = new WOW({
+   boxClass: "wow",
+   animateClass: "animate__animated",
+   offset: 25,
+   mobile: true,
+   live: true,
+});
+wow.init();
