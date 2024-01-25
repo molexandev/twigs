@@ -208,7 +208,8 @@
       justify-content: space-between;
       margin-bottom: 135px;
       overflow: hidden;
-      padding-top: 62px;
+      // padding-top: 62px;
+      // background-color: transparent;
    }
    &__info {
       max-width: 314px;
@@ -254,6 +255,7 @@
       max-width: 1020px;
       width: 100%;
       overflow: hidden;
+      padding-top: 62px;
    }
    &__slider-item {
       text-align: center;
@@ -321,6 +323,7 @@
       border-right: none;
       outline: none;
       padding: 0;
+      z-index: 1000;
    }
    .slick-prev {
       background-image: url(../images/arrow-left-sl.svg);

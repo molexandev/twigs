@@ -15,6 +15,11 @@
       }
       &__info {
          max-width: 100%;
+         text-align: center;
+      }
+      &__btn {
+         margin: 0 auto;
+         margin-bottom: 35px;
       }
    }
 }
@@ -126,7 +131,8 @@
    }
    .best-sellers {
       &__slider-item {
-         max-width: 190px;
+         max-width: 100%;
+         padding: 0 7px;
       }
       &__slider-title-link {
          font-size: 1rem;
