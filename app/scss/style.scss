@@ -113,6 +113,7 @@
    }
    &__img {
       object-fit: contain;
+      position: relative;
       z-index: -1000;
       max-height: 800px;
    }
@@ -207,6 +208,7 @@
       justify-content: space-between;
       margin-bottom: 135px;
       overflow: hidden;
+      padding-top: 62px;
    }
    &__info {
       max-width: 314px;
@@ -251,6 +253,7 @@
    &__slider-wrapper {
       max-width: 1020px;
       width: 100%;
+      overflow: hidden;
    }
    &__slider-item {
       text-align: center;
@@ -266,12 +269,20 @@
       }
    }
    &__slider-img-box {
-      width: 328px;
-      height: 309px;
+      max-width: 328px;
+      max-height: 309px;
+      margin: 0 auto;
       margin-bottom: 20px;
+   }
+   &__slider-img-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
    &__slider-img {
       object-fit: contain;
+      margin: 0 auto;
+      width: 100%;
    }
    &__slider-description {
       font-size: 0.75rem;
@@ -327,6 +338,7 @@
       justify-content: end;
       align-items: center;
       margin-bottom: 135px;
+      overflow: hidden;
    }
    &__img-box {
       position: absolute;
@@ -413,6 +425,7 @@
       margin-bottom: 135px;
       color: $default;
       text-align: center;
+      overflow: hidden;
    }
    &__title {
       font-size: 3.3125rem;
@@ -436,8 +449,10 @@
       }
    }
    &__img-box {
-      width: 220px;
-      height: 220px;
+      max-width: 220px;
+      width: 100%;
+      max-height: 220px;
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -479,6 +494,7 @@
       color: $default;
       margin-bottom: 135px;
       overflow: hidden;
+      padding-top: 85px;
    }
    &__info {
       max-width: 504px;
@@ -527,6 +543,9 @@
       max-width: 576px;
       width: 100%;
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       &::after {
          content: "";
          position: absolute;
@@ -546,6 +565,7 @@
       color: $default;
       padding: 0 72px;
       margin-bottom: 187px;
+      overflow: hidden;
    }
    &__title {
       font-size: 3.25rem;
@@ -627,7 +647,7 @@
       text-align: center;
       font-size: 2.5rem;
       @extend %roboto-700;
-      line-height: 51.84px;
+      line-height: 3.24rem;
       max-width: 634px;
       margin: 0 auto;
       padding-top: 126px;
@@ -663,10 +683,12 @@
       align-items: center;
    }
    &__logo {
-      width: 155px;
+      width: 100px;
       height: 55px;
    }
    &__logo-svg {
+      width: 100px;
+      height: 55px;
       fill: $accent;
    }
 
@@ -709,6 +731,7 @@
       @extend %roboto-400;
       padding-bottom: 32px;
       margin-bottom: 29px;
+      pointer-events: none;
    }
    &__list {
       display: flex;
