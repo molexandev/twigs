@@ -27,6 +27,10 @@
    .top-banner {
       &__inner {
          padding-top: 250px;
+         padding-bottom: 215px;
+      }
+      &__info {
+         display: none;
       }
    }
    .advantages {
@@ -108,10 +112,12 @@
    .top-banner {
       &__wrapper {
          margin-bottom: 50px;
+         padding-bottom: 50px;
       }
       &__inner {
          padding-top: 130px;
          padding-left: 30px;
+         padding-bottom: 0px;
       }
       &__title {
          font-size: 2.625rem;
@@ -256,7 +262,7 @@
    }
    .top-banner {
       &__inner {
-         padding-top: 80px;
+         padding-top: 120px;
          padding-left: 30px;
          padding-bottom: 0;
       }
@@ -403,7 +409,7 @@
          gap: 30px 0;
       }
       &__title {
-         font-size: 2rem;
+         font-size: 1.375rem;
          line-height: 2.625rem;
          margin-bottom: 30px;
          margin-bottom: 0;
@@ -454,8 +460,11 @@
 @media (max-width: 500px) {
    .top-banner {
       &__inner {
-         padding-top: 64px;
+         padding-top: 80px;
          padding-left: 0px;
+      }
+      &__subtitle {
+         padding-top: 50px;
       }
       &__title {
          font-size: 1.625rem;
@@ -542,13 +551,6 @@
       }
       &__items {
          grid-template-columns: repeat(1, 1fr);
-      }
-   }
-}
-@media (max-width: 380px) {
-   .top-banner {
-      &__btn {
-         display: none;
       }
    }
 }
