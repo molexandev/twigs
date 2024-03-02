@@ -60,7 +60,6 @@ $(function () {
    // footer slider nav
 
    $(".footer-nav__title").on("click", function () {
-      // $("footer-nav__list").toggleClass("footer-nav__list--active");
       $(".footer-nav__title").toggleClass("footer-nav__title--active");
       $(this).next().slideToggle();
    });
